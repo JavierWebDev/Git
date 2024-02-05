@@ -35,6 +35,21 @@ git log --max-count=5
 > - Muestra las fechas de los commits de forma relativa
 
 ```bash
-git log --graph 
+git log --graph --abbrev-commit --decorate --pretty=format:'%C(red)%h %C(yellow)%d %C(white)%S %s %C(green)%ar'
 ```
+
+## Ejercicio 3
+
+>Estas trabajas frecuentemente con el comando git log -1 HEAD para obtener detalles sobre
+>el último commit en la rama actual. Sin embargo, encuentras que escribir este comando
+>completo es un poco tedioso. Quieres simplificarlo creando un alias personalizado.
+>
+>Tu tarea es utilizar el comando git config para crear un alias llamado last que represente el
+>comando git log -1 HEAD.
+
+```bash
+git config --global alias.h1 "log -1 HEAD"
+```
+
+## Ejercicio 4
 
